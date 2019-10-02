@@ -23,6 +23,7 @@
 ## Conditionals
 - rps
 ## Loops
+- fizzbuzz
 ## Hash
 ## Class
 - Person
