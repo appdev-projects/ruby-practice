@@ -8,7 +8,7 @@ describe "rps.rb" do
       $stdin = STDIN
   end
   
-  it "should output 'Hello, name!'" do
+  it "should output 'Hello, name!'", points: 1 do
     allow($stdin).to receive(:gets).and_return("rock")
     move = $stdin.gets
     response = "Please choose rock, paper, or scissors:\nYou played #{move}!\nThe computer played scissors!\nYou won!\n"

@@ -1,0 +1,16 @@
+example_id                               | status | run_time        |
+---------------------------------------- | ------ | --------------- |
+./spec/scripts/advanced_spec.rb[1:1]     | failed | 0.00016 seconds |
+./spec/scripts/conditionals_spec.rb[1:1] | passed | 0.01648 seconds |
+./spec/scripts/float_spec.rb[1:1]        | passed | 0.00079 seconds |
+./spec/scripts/float_spec.rb[2:1]        | passed | 0.00063 seconds |
+./spec/scripts/integer_spec.rb[1:1]      | passed | 0.00059 seconds |
+./spec/scripts/loops_spec.rb[1:1]        | passed | 0.00096 seconds |
+./spec/scripts/person_spec.rb[1:1]       | failed | 0.00017 seconds |
+./spec/scripts/person_spec.rb[2:1]       | failed | 0.00011 seconds |
+./spec/scripts/string_spec.rb[1:1]       | passed | 0.00162 seconds |
+./spec/scripts/string_spec.rb[2:1]       | passed | 0.00074 seconds |
+./spec/scripts/string_spec.rb[3:1]       | passed | 0.0007 seconds  |
+./spec/scripts/string_spec.rb[4:1]       | passed | 0.00064 seconds |
+./spec/scripts/string_spec.rb[5:1]       | passed | 0.00061 seconds |
+./spec/scripts/string_spec.rb[6:1]       | passed | 0.00136 seconds |

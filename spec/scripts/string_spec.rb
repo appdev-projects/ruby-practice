@@ -19,13 +19,13 @@ describe "case.rb" do
 end
 
 describe "gsub.rb" do
-  it "should output a String of words separated by spaces" do
+  it "should output a String of words separated by spaces", points: 1 do
     expect { require_relative '../../string/gsub' }.to output("put spaces in between these words\n").to_stdout
   end
 end
 
 describe "chomp.rb" do
-  it "should remove ending '$'" do
+  it "should remove ending '$'", points: 1 do
     expect { require_relative '../../string/chomp' }.to output("Hello!\n").to_stdout
   end
 end
@@ -39,7 +39,7 @@ describe "gets.rb" do
       $stdin = STDIN
   end
   
-  it "should output 'Hello, name!'" do
+  it "should output 'Hello, name!'" , points: 1 do
     allow($stdin).to receive(:gets).and_return("jelani")
     name = $stdin.gets
     expect { require_relative '../../string/gets' }.to output("Hello, Jelani!\n").to_stdout

@@ -1,7 +1,7 @@
 require "spec_helper"
 
 describe "hello_world.rb" do
-  it "should return 'Hello, World!'" do
+  it "should return 'Hello, World!'", points: 1 do
     expect(HelloWorld.hello).to eq("Hello, World!")
     # HelloWorld.should_receive(:hello).and_return("Hello, World!")
 
