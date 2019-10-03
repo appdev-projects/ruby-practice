@@ -1,6 +1,6 @@
 class HelloWorld
 
-  def HelloWorld.hello
+  def self.hello
     return "Hello, World!"
   end
 
