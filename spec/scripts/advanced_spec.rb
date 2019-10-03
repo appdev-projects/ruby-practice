@@ -19,8 +19,32 @@ describe "two_fer.rb" do
 end
 
 describe "hamming.rb" do
-  it "uses any name when given", points: 0.5 do
-    expect(TwoFer.two_fer("Bob")).to eql("One for Bob, one for me.")
+  it "works with empty strands", points: 0.5 do
+    expect(Hamming.compute('', '')).to eq(0)
+  end
+end
+
+describe "hamming.rb" do
+  it "works with single letter different strands", points: 0.5 do
+    expect(Hamming.compute('G', 'T')).to eq(1)
+  end
+end
+
+describe "hamming.rb" do
+  it "works with single letter identical strands", points: 0.5 do
+    expect(Hamming.compute('A', 'A')).to eq(0)
+  end
+end
+
+describe "hamming.rb" do
+  it "works with long identical strands", points: 0.5 do
+    expect(Hamming.compute('GGACTGAAATCTG', 'GGACTGAAATCTG')).to eq(0)
+  end
+end
+
+describe "hamming.rb" do
+  it "works with long different strands", points: 0.5 do
+    expect(Hamming.compute('GGACGGATTCTG', 'AGGACGGATTCT')).to eq(9)
   end
 end
 
