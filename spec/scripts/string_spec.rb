@@ -1,5 +1,5 @@
 describe "multiplication.rb" do
-  it "should output 'Hello World'" do
+  it "should output 'Hello World'", points: 0.5 do
 
     expect { require_relative '../../string/multiplication' }.to output("Hello World!\n").to_stdout
 
@@ -7,13 +7,13 @@ describe "multiplication.rb" do
 end
 
 describe "strip.rb" do
-  it "should output 'remove outside spaces'" do
+  it "should output 'remove outside spaces'", points: 0.5 do
     expect { require_relative '../../string/strip' }.to output("remove the outside spaces\n").to_stdout
   end
 end
 
 describe "case.rb" do
-  it "should output 'HELLO friends AnD FaMiLy'" do
+  it "should output 'HELLO friends AnD FaMiLy'", points: 0.5 do
     expect { require_relative '../../string/case' }.to output("HELLO friends AnD FaMiLy\n").to_stdout
   end
 end
