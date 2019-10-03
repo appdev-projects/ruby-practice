@@ -115,8 +115,68 @@ describe "isogram.rb" do
 end
 
 describe "raindrops.rb" do
-  it "uses any name when given", points: 0.5 do
-    expect(TwoFer.two_fer("Bob")).to eql("One for Bob, one for me.")
+  it "returns the number if not a factor of 3,5, or 7", points: 0.5 do
+    expect(Raindrops.convert(1)).to eq("1")
+  end
+end
+
+describe "raindrops.rb" do
+  it "returns 'Pling' when a factor of 3", points: 0.5 do
+    expect(Raindrops.convert(3)).to eq("Pling")
+  end
+end
+
+describe "raindrops.rb" do
+  it "returns 'Pling' when a factor of 3", points: 0.5 do
+    expect(Raindrops.convert(6)).to eq("Pling")
+  end
+end
+
+describe "raindrops.rb" do
+  it "returns 'Plang' when a factor of 5", points: 0.5 do
+    expect(Raindrops.convert(5)).to eq("Plang")
+  end
+end
+
+describe "raindrops.rb" do
+  it "returns 'Plong' when a factor of 7", points: 0.5 do
+    expect(Raindrops.convert(7)).to eq("Plong")
+  end
+end
+
+describe "raindrops.rb" do
+  it "returns 'Pling' when a factor of 3", points: 0.5 do
+    expect(Raindrops.convert(8)).to eq("8")
+  end
+end
+
+describe "raindrops.rb" do
+  it "returns 'PlingPlang' when a factor of 3 AND 5", points: 0.5 do
+    expect(Raindrops.convert(15)).to eq("PlingPlang")
+  end
+end
+
+describe "raindrops.rb" do
+  it "returns 'PlingPlong' when a factor of 3 and 7", points: 0.5 do
+    expect(Raindrops.convert(21)).to eq("PlingPlong")
+  end
+end
+
+describe "raindrops.rb" do
+  it "returns 'PlangPlong' when a factor of 5 and 7", points: 0.5 do
+    expect(Raindrops.convert(35)).to eq("PlangPlong")
+  end
+end
+
+describe "raindrops.rb" do
+  it "returns 'PlingPlangPlong' when a factor of 3, 5, and 7", points: 0.5 do
+    expect(Raindrops.convert(105)).to eq("PlingPlangPlong")
+  end
+end
+
+describe "raindrops.rb" do
+  it "works for large numbers", points: 0.5 do
+    expect(Raindrops.convert(3125)).to eq("Plang")
   end
 end
 
