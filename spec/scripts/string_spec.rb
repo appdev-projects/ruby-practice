@@ -29,16 +29,9 @@ describe "chomp.rb" do
 end
 
 describe "gets.rb" do
-  before do
-      $stdin = StringIO.new("jelani")
-  end
-
-  after do 
-      $stdin = STDIN
-  end
-  
   it "should output 'Hello, name!'" , points: 1 do
-    allow($stdin).to receive(:gets).and_return("jelani")
+    allow_any_instance_of(Object).to receive(:gets).and_return("jelani")
+
     expect { require_relative '../../string/gets' }.to output("Hello, Jelani!\n").to_stdout
   end
 end

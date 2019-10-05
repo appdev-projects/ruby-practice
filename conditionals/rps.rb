@@ -1,6 +1,6 @@
 # rps
 puts "Please choose rock, paper, or scissors:"
-player_move = gets.chomp
+# player_move = gets.chomp
 player_move = File.read(File.join(__dir__, 'input.txt')).chomp
 computer_move = "scissors"
 puts "You played #{player_move}!"
