@@ -1,6 +1,6 @@
 describe "multiplication.rb" do
-  it "should output 'Hello World'", points: 1 do
-    expect { require_relative '../../string/multiplication' }.to output("Hello World!\n").to_stdout
+  it "should output 'HoHoHo'", points: 1 do
+    expect { require_relative '../../string/multiplication' }.to output("HoHoHo\n").to_stdout
   end
 end
 

@@ -1,1 +1,1 @@
-puts "    remove the outside spaces    ".strip
+puts "    remove the outside spaces    "

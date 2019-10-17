@@ -1,2 +1,1 @@
 name = gets.chomp
-puts "Hello, " + name.capitalize + "!"
