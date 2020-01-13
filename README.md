@@ -152,7 +152,7 @@ Your output should look something like
 # etc
 ```
 Hint: if x is a multiple of y, that means that we can divide x by y and have nothing leftover. Do we have anything in our Ruby toolbox that can help find remainders? Look through your older readings.
-## Hash
+
 ## Class
 ### Person
 Define a class Person with:
