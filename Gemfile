@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem "grade_runner", "0.0.5.1"
+gem "grade_runner", :git => "https://github.com/firstdraft/grade_runner.git", :branch => "ruby-spring2020"
 gem "web_git", :git => "https://github.com/firstdraft/web_git.git", :branch => "spring2020"
 gem "shotgun"
 gem "rake"

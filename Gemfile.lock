@@ -1,4 +1,12 @@
 GIT
+  remote: https://github.com/firstdraft/grade_runner.git
+  revision: c9103c1ff750d57011ff7caada66f4b084eed229
+  branch: ruby-spring2020
+  specs:
+    grade_runner (0.0.5.1)
+      oj
+
+GIT
   remote: https://github.com/firstdraft/web_git.git
   revision: 53ea1154b3c74ac392dc7240cea3f20ebcead7d9
   branch: spring2020
@@ -33,7 +41,6 @@ GEM
     erubi (1.9.0)
     git (1.6.0)
       rchardet (~> 1.8)
-    grade_runner (0.0.5.1)
     i18n (1.8.2)
       concurrent-ruby (~> 1.0)
     loofah (2.5.0)
@@ -45,6 +52,7 @@ GEM
       ruby2_keywords (~> 0.0.1)
     nokogiri (1.10.9)
       mini_portile2 (~> 2.4.0)
+    oj (3.10.6)
     rack (2.2.2)
     rack-protection (2.0.8.1)
       rack
@@ -88,7 +96,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  grade_runner (= 0.0.5.1)
+  grade_runner!
   rake
   rspec
   shotgun
